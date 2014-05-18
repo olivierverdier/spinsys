@@ -39,7 +39,7 @@ Now the solution `ms` is a list of Nx3 matrices which correspond to the solution
 
 ## Available systems
 
-There are two common spin systems which are already available in thie package.
+There are two common spin systems which are already available in this package.
 
 ### Spin chain
 
@@ -61,7 +61,8 @@ from spinsys import vortex
 import numpy as np
 
 strengths = np.array([1., 1., -1.])
-gradient = spinsys.get_gradient(strengths)
+gradient = vortex.get_gradient(strengths)
+
 ```
 [1]: http://arxiv.org/abs/1402.3334
 [2]: http://www.massey.ac.nz/~rmclachl/
