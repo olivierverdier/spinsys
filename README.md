@@ -1,5 +1,7 @@
 # spinsys - Spherical midpoint for spin systems
 
+[![Build Status](https://travis-ci.org/olivierverdier/spinsys.svg?branch=master)](https://travis-ci.org/olivierverdier/spinsys)  [![Coverage Status](https://img.shields.io/coveralls/olivierverdier/spinsys/master.svg)](https://coveralls.io/r/olivierverdier/spinsys?branch=master)
+
 ## About
 
 This is a symplectic midpoint solver for *spin systems*. These systems are symplectic differential equations derived from the Lie–Poisson structure of a product of spheres. The paper "[Discrete time Hamiltonian spin systems][1]" gives the details of the setting and the method.
