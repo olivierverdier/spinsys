@@ -1,6 +1,7 @@
 # spinsys - Spherical midpoint for spin systems
 
-[![Build Status](https://travis-ci.org/olivierverdier/spinsys.svg?branch=master)](https://travis-ci.org/olivierverdier/spinsys)  [![Coverage Status](https://img.shields.io/coveralls/olivierverdier/spinsys/master.svg)](https://coveralls.io/r/olivierverdier/spinsys?branch=master)
+[![Build Status](https://img.shields.io/travis/olivierverdier/spinsys/master.svg?style=flat-square)](https://travis-ci.org/olivierverdier/spinsys)
+[![Coverage Status](https://img.shields.io/coveralls/olivierverdier/spinsys/master.svg?style=flat-square)](https://coveralls.io/r/olivierverdier/spinsys?branch=master)
 
 ## About
 
