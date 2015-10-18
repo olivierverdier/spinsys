@@ -4,7 +4,7 @@ from __future__ import division
 
 import numpy as np
 
-import nonlin
+from . import nonlin
 
 
 def mid_G(dm, m0, h, X, Xprime, idn):

@@ -63,10 +63,8 @@ class FixpointIterator(object):
 		self.stats['niterations/call'] = 0
 
 		self.params = params
-		if not self.params.has_key('maxit'):
-			params['maxit'] = 10
-		if not self.params.has_key('minit'):
-			params['minit'] = 1
+		self.params.setdefault('maxit', 10)
+		self.params.setdefault('minit', 1)
 		if stopit is None:
 			self.stopit = StoppingCriteria()
 		else:

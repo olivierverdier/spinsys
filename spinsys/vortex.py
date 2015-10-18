@@ -18,15 +18,15 @@ def _hamiltonian_jet_python(strengths, m,dH,ddH):
 	n = len(strengths)
 
 	H = 0.0
-	for i in xrange(n):
-		for j in xrange(i):
+	for i in range(n):
+		for j in range(i):
 			## mi_dot_mj = m[3*i]*m[3*j] + m[3*i+1]*m[3*j+1] + m[3*i+2]*m[3*j+2]
 			strength = strengths[i] * strengths[j]
 			mi_dot_mj = dot3_numba(m[3*i:3*(i+1)],m[3*j:3*(j+1)])
 			lij = 1.0-mi_dot_mj
 			lijsq = lij**2
 			H += strength*np.log(2.0*lij)
-			for k in xrange(3):
+			for k in range(3):
 				dH[3*i+k] -= strength*m[3*j+k]/lij
 				dH[3*j+k] -= strength*m[3*i+k]/lij
 				ddH[3*i+k,3*i+k] -= m[3*j+k]**2/lijsq
@@ -43,7 +43,7 @@ def Xham_python(m,dH):
 	Not used.
 	"""
 	n = int(m.shape[0]/3)
-	for i in xrange(n):
+	for i in range(n):
 		y0 = m[3*i+1]*dH[3*i+2]-m[3*i+2]*dH[3*i+1]
 		y1 = m[3*i+2]*dH[3*i]-m[3*i]*dH[3*i+2]
 		y2 = m[3*i]*dH[3*i+1]-m[3*i+1]*dH[3*i]
