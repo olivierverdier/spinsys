@@ -6,9 +6,9 @@
 
 ## About
 
-This is a symplectic midpoint solver for *spin systems*. These systems are symplectic differential equations derived from the Lie–Poisson structure of a product of spheres. The paper "[Discrete time Hamiltonian spin systems][1]" gives the details of the setting and the method.
+This is a symplectic midpoint solver for *spin systems*. These systems are symplectic differential equations derived from the Lie–Poisson structure of a product of spheres. The papers "[Symplectic integrators for spin systems](http://arxiv.org/abs/1402.4114)", "[A minimal-coordinate symplectic integrator on spheres](http://arxiv.org/abs/1402.3334)" and "[Geometry of discrete-time spin systems](http://arxiv.org/abs/1505.04035)" gives the details of the setting and the method, as well as a theoretical background.
 
-The method and the implementation are a joint work of [R. I. McLachlan][2], [K. Modin][3] and [O. Verdier][4].
+The method and the implementation are a joint work of [R. I. McLachlan](https://www.massey.ac.nz/~rmclachl/), [K. Modin](https://klasmodin.wordpress.com/) and [O. Verdier](https://olivierverdier.com).
 
 ## How to use it
 
@@ -68,7 +68,3 @@ strengths = np.array([1., 1., -1.])
 gradient = vortex.get_gradient(strengths)
 
 ```
-[1]: http://arxiv.org/abs/1402.3334
-[2]: http://www.massey.ac.nz/~rmclachl/
-[3]: http://klasmodin.wordpress.com/
-[4]: http://olivierverdier.com
