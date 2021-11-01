@@ -2,7 +2,7 @@
 
 [![Build Status](https://img.shields.io/travis/olivierverdier/spinsys/master.svg?style=flat-square)](https://travis-ci.org/olivierverdier/spinsys)
 [![Coverage Status](https://img.shields.io/coveralls/olivierverdier/spinsys/master.svg?style=flat-square)](https://coveralls.io/r/olivierverdier/spinsys?branch=master)
-![Python version](https://img.shields.io/badge/python-2.7, 3.4-blue.svg?style=flat-square)
+![Python version](https://img.shields.io/badge/python-2.7,_3.4-blue.svg?style=flat-square)
 
 ## About
 
